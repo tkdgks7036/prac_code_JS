@@ -1,10 +1,13 @@
 function solution(spell, dic) {
-    let match_result = 2;
+    let str = spell.sort().join('');
 
-    dic.map(x => {
-        let all_match = spell.every(a => x.includes(a));
-        if (all_match) return match_result = 1;
-    });
+    for (let i = 0; i < dic.length; i++) {
+        dic[i] = dic[i].split('').sort().join('');
+    };
 
-    return match_result;
-}; 
+    for (let i = 0; i <= dic.length; i++) {
+        if (str === dic[i]) return 1;
+    }
+
+    return 2;
+}
