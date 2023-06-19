@@ -7,4 +7,4 @@ function solution(spell, dic) {
     });
 
     return match_result;
-};
+}; 
