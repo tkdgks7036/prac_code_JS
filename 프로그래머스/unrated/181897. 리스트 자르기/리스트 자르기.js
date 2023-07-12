@@ -1,4 +1,5 @@
 function solution(n, slicer, num_list) {
+    // 문제와 동일하게 slicer 의 idx 들을 a, b, c 로 구조분해할당
     let [a, b, c] = [...slicer];
 
     switch (n) {
